@@ -1,0 +1,41 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1120" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="0.5" stop-color="#102A43"/>
+      <stop offset="1" stop-color="#061018"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="277" y1="126" x2="982" y2="482" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="180" y1="90" x2="998" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1184" height="544" rx="28" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <circle cx="1036" cy="154" r="128" fill="url(#soft)"/>
+  <circle cx="245" cy="515" r="144" fill="url(#soft)"/>
+  <rect x="96" y="108" width="516" height="410" rx="28" fill="rgba(4,12,20,0.62)" stroke="rgba(125,211,252,0.18)"/>
+  <rect x="672" y="128" width="504" height="372" rx="28" fill="rgba(4,12,20,0.56)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="128" y="180" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="28" font-weight="700">opencode-notifier</text>
+  <text x="128" y="240" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="64" font-weight="800">Stay in the flow.</text>
+  <text x="128" y="318" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="28" font-weight="500">macOS notifications for OpenCode when tasks finish,</text>
+  <text x="128" y="356" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="28" font-weight="500">error out, or pause and wait for your answer.</text>
+  <rect x="128" y="402" width="188" height="52" rx="26" fill="url(#accent)"/>
+  <text x="162" y="436" fill="#03131D" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="22" font-weight="800">Question asked</text>
+  <rect x="694" y="158" width="460" height="74" rx="18" fill="rgba(255,255,255,0.04)"/>
+  <text x="720" y="192" fill="#8ECAE6" font-family="SF Mono, Menlo, monospace" font-size="16">Notification Center</text>
+  <text x="720" y="220" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="28" font-weight="700">OpenCode - opencode-notifier</text>
+  <rect x="706" y="266" width="432" height="72" rx="16" fill="rgba(14,165,233,0.12)" stroke="rgba(125,211,252,0.2)"/>
+  <text x="730" y="296" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="18">Question asked</text>
+  <text x="730" y="323" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="26" font-weight="700">Which option should I use for deployment?</text>
+  <rect x="706" y="356" width="432" height="72" rx="16" fill="rgba(34,197,94,0.11)" stroke="rgba(34,197,94,0.24)"/>
+  <text x="730" y="386" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="18">Session idle</text>
+  <text x="730" y="413" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="26" font-weight="700">Task complete</text>
+  <text x="128" y="502" fill="#8ECAE6" font-family="SF Mono, Menlo, monospace" font-size="20">session.idle  •  question.asked  •  session.error</text>
+  <text x="128" y="534" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="22">Uses osascript, terminal-notifier, and afplay.</text>
+</svg>

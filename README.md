@@ -1,6 +1,26 @@
+<p align="center">
+  <img src="./assets/banner.svg" alt="opencode-notifier banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="./README.md"><strong>English</strong></a> ·
+  <a href="./README.zh-CN.md"><strong>简体中文</strong></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/sicaboy/opencode-notifier/releases"><img src="https://img.shields.io/github/v/release/sicaboy/opencode-notifier?style=for-the-badge&label=release" alt="Latest release" /></a>
+  <a href="https://github.com/sicaboy/opencode-notifier/stargazers"><img src="https://img.shields.io/github/stars/sicaboy/opencode-notifier?style=for-the-badge&label=stars" alt="GitHub stars" /></a>
+  <a href="https://github.com/sicaboy/opencode-notifier/blob/main/LICENSE"><img src="https://img.shields.io/github/license/sicaboy/opencode-notifier?style=for-the-badge" alt="MIT license" /></a>
+  <img src="https://img.shields.io/badge/platform-macOS-0F172A?style=for-the-badge&logo=apple" alt="macOS" />
+</p>
+
 # opencode-notifier
 
 macOS notifications for OpenCode when a task finishes, errors, or pauses to ask you a structured question.
+
+<p align="center">
+  <img src="./assets/preview.svg" alt="opencode-notifier preview" width="100%" />
+</p>
 
 ## Highlights
 
@@ -9,6 +29,13 @@ macOS notifications for OpenCode when a task finishes, errors, or pauses to ask 
 - Notify when a session errors
 - Play different sounds for done, question, and error states
 - Keep a debug log so you can tell whether the plugin loaded and which events fired
+
+## Why it feels polished
+
+- A visual README with local SVG assets, not just plain text
+- Bilingual docs with language switch links at the top
+- A release-ready repo with install script, examples, and debug guidance
+- Notification copy optimized for global users
 
 ## Events handled
 
@@ -59,6 +86,8 @@ Or use the included installer:
 - `scripts/install.sh` - convenience installer
 - `examples/opencode.json` - optional config example
 - `README.zh-CN.md` - Chinese guide
+- `assets/banner.svg` - social-style banner graphic
+- `assets/preview.svg` - feature showcase graphic
 
 ## How the plugin works
 

@@ -1,6 +1,26 @@
+<p align="center">
+  <img src="./assets/banner.svg" alt="opencode-notifier banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="./README.md"><strong>English</strong></a> ·
+  <a href="./README.zh-CN.md"><strong>简体中文</strong></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/sicaboy/opencode-notifier/releases"><img src="https://img.shields.io/github/v/release/sicaboy/opencode-notifier?style=for-the-badge&label=release" alt="Latest release" /></a>
+  <a href="https://github.com/sicaboy/opencode-notifier/stargazers"><img src="https://img.shields.io/github/stars/sicaboy/opencode-notifier?style=for-the-badge&label=stars" alt="GitHub stars" /></a>
+  <a href="https://github.com/sicaboy/opencode-notifier/blob/main/LICENSE"><img src="https://img.shields.io/github/license/sicaboy/opencode-notifier?style=for-the-badge" alt="MIT license" /></a>
+  <img src="https://img.shields.io/badge/platform-macOS-0F172A?style=for-the-badge&logo=apple" alt="macOS" />
+</p>
+
 # opencode-notifier
 
 给 OpenCode 增加 macOS 系统通知：任务完成、任务报错、以及中途停下来向你提问时提醒你。
+
+<p align="center">
+  <img src="./assets/preview.svg" alt="opencode-notifier preview" width="100%" />
+</p>
 
 ## 功能
 
@@ -9,6 +29,13 @@
 - OpenCode 发生错误时提醒
 - 不同事件播放不同声音
 - 写入诊断日志，方便排查插件是否加载、事件是否触发
+
+## 为什么这个仓库看起来更完整
+
+- 顶部带中英文切换链接
+- 本地 SVG 视觉素材，GitHub 展示更像成熟项目
+- 安装脚本、示例配置、排错说明都齐全
+- 通知文案改成英文，更适合全球用户
 
 ## 监听的事件
 
@@ -61,6 +88,8 @@ cp notify.js ~/.config/opencode/plugins/notify.js
 - `scripts/install.sh` - 安装脚本
 - `examples/opencode.json` - 示例配置
 - `README.md` - 英文说明
+- `assets/banner.svg` - 顶部横幅图
+- `assets/preview.svg` - 功能展示图
 
 ## 日志排错
 
