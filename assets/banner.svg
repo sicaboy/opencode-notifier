@@ -5,39 +5,31 @@
       <stop offset="0.52" stop-color="#102A43"/>
       <stop offset="1" stop-color="#061018"/>
     </linearGradient>
-    <linearGradient id="accent" x1="220" y1="130" x2="1030" y2="480" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="190" y1="150" x2="1040" y2="470" gradientUnits="userSpaceOnUse">
       <stop stop-color="#7DD3FC"/>
-      <stop offset="0.55" stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
       <stop offset="1" stop-color="#22C55E"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 150) rotate(90) scale(170)">
-      <stop stop-color="#38BDF8" stop-opacity="0.28"/>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1040 150) rotate(90) scale(180)">
+      <stop stop-color="#38BDF8" stop-opacity="0.24"/>
       <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 520) rotate(90) scale(180)">
-      <stop stop-color="#22C55E" stop-opacity="0.16"/>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(230 510) rotate(90) scale(200)">
+      <stop stop-color="#22C55E" stop-opacity="0.14"/>
       <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
     </radialGradient>
   </defs>
+
   <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
   <rect x="48" y="48" width="1184" height="544" rx="28" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
-  <circle cx="1060" cy="150" r="170" fill="url(#glowA)"/>
-  <circle cx="220" cy="520" r="180" fill="url(#glowB)"/>
+  <circle cx="1040" cy="150" r="180" fill="url(#glowA)"/>
+  <circle cx="230" cy="510" r="200" fill="url(#glowB)"/>
 
-  <rect x="114" y="116" width="1052" height="408" rx="32" fill="rgba(4,12,20,0.42)" stroke="rgba(255,255,255,0.08)"/>
-  <rect x="146" y="148" width="988" height="344" rx="26" fill="rgba(6,18,28,0.58)" stroke="rgba(125,211,252,0.18)"/>
+  <rect x="112" y="116" width="1056" height="408" rx="34" fill="rgba(4,12,20,0.34)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="148" y="152" width="984" height="336" rx="28" fill="rgba(6,18,28,0.54)" stroke="rgba(125,211,252,0.18)"/>
 
-  <text x="196" y="238" fill="#9FD7F5" font-family="SF Mono, Menlo, monospace" font-size="22">OpenCode plugin</text>
-  <text x="196" y="346" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="104" font-weight="800">opencode-notifier</text>
+  <text x="640" y="250" text-anchor="middle" fill="#9FD7F5" font-family="SF Mono, Menlo, monospace" font-size="24">OpenCode plugin</text>
+  <text x="640" y="364" text-anchor="middle" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="112" font-weight="800">opencode-notifier</text>
 
-  <rect x="196" y="392" width="404" height="18" rx="9" fill="url(#accent)" fill-opacity="0.92"/>
-
-  <rect x="860" y="186" width="214" height="56" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
-  <text x="913" y="221" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">macOS</text>
-
-  <rect x="860" y="262" width="214" height="56" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
-  <text x="910" y="297" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">OpenCode</text>
-
-  <rect x="860" y="338" width="214" height="56" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
-  <text x="905" y="373" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">Notify</text>
+  <rect x="398" y="404" width="484" height="18" rx="9" fill="url(#accent)" fill-opacity="0.94"/>
 </svg>

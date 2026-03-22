@@ -56,6 +56,14 @@ brew install terminal-notifier
 
 ## 快速安装
 
+一条命令安装：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/sicaboy/opencode-notifier/main/scripts/install.sh | bash
+```
+
+或者手动安装：
+
 ```bash
 mkdir -p ~/.config/opencode/plugins
 cp notify.js ~/.config/opencode/plugins/notify.js
@@ -63,7 +71,7 @@ cp notify.js ~/.config/opencode/plugins/notify.js
 
 然后重启 `opencode`。
 
-或者直接运行：
+或者 clone 仓库后本地运行：
 
 ```bash
 ./scripts/install.sh
