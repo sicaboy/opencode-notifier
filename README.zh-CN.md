@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/sicaboy/opencode-notifier/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/sicaboy/opencode-notifier/test.yml?branch=main&style=for-the-badge&label=test" alt="Test status" /></a>
   <a href="https://github.com/sicaboy/opencode-notifier/releases"><img src="https://img.shields.io/github/v/release/sicaboy/opencode-notifier?style=for-the-badge&label=release" alt="Latest release" /></a>
   <a href="https://github.com/sicaboy/opencode-notifier/stargazers"><img src="https://img.shields.io/github/stars/sicaboy/opencode-notifier?style=for-the-badge&label=stars" alt="GitHub stars" /></a>
   <a href="https://github.com/sicaboy/opencode-notifier/blob/main/LICENSE"><img src="https://img.shields.io/github/license/sicaboy/opencode-notifier?style=for-the-badge" alt="MIT license" /></a>
