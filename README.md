@@ -30,13 +30,6 @@ macOS notifications for OpenCode when a task finishes, errors, or pauses to ask 
 - Play different sounds for done, question, and error states
 - Keep a debug log so you can tell whether the plugin loaded and which events fired
 
-## Why it feels polished
-
-- A visual README with local SVG assets, not just plain text
-- Bilingual docs with language switch links at the top
-- A release-ready repo with install script, examples, and debug guidance
-- Notification copy optimized for global users
-
 ## Events handled
 
 - `session.idle`
