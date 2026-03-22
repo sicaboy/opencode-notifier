@@ -56,7 +56,7 @@ export const NotifyPlugin = async ({ $, directory }) => {
 
       if (event.type === "session.idle") {
         await push({
-          message: "任务已完成",
+          message: "Task complete",
           subtitle: "Session idle",
           sound: "Glass",
         })
@@ -64,7 +64,7 @@ export const NotifyPlugin = async ({ $, directory }) => {
 
       if (event.type === "session.error") {
         await push({
-          message: "任务出错了",
+          message: "Session error",
           subtitle: "Session error",
           sound: "Basso",
         })
@@ -72,7 +72,7 @@ export const NotifyPlugin = async ({ $, directory }) => {
 
       if (event.type === "permission.asked") {
         await push({
-          message: "OpenCode 需要你的确认",
+          message: "OpenCode needs your approval",
           subtitle: "Permission required",
           sound: "Ping",
         })
@@ -80,7 +80,7 @@ export const NotifyPlugin = async ({ $, directory }) => {
 
       if (event.type === "question.asked") {
         const first = event.properties.questions?.[0]
-        const text = first?.question || first?.header || "OpenCode 正在等你回答"
+        const text = first?.question || first?.header || "OpenCode is waiting for your input"
         await push({
           message: text,
           subtitle: "Question asked",

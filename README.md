@@ -1,30 +1,29 @@
 # opencode-notifier
 
-System notifications for OpenCode when a task completes, errors, or the agent pauses to ask you a question.
+macOS notifications for OpenCode when a task finishes, errors, or pauses to ask you a structured question.
 
-## What this gives you
+## Highlights
 
-- A global OpenCode plugin for macOS
-- Notifications when OpenCode becomes idle after a response
-- Notifications when OpenCode throws a session error
-- Notifications when OpenCode asks a structured question and waits for your input
-- Optional sounds for each event
-- A log file for debugging plugin execution
+- Notify when OpenCode becomes idle after finishing a response
+- Notify when OpenCode pauses and asks you to choose or answer something
+- Notify when a session errors
+- Play different sounds for done, question, and error states
+- Keep a debug log so you can tell whether the plugin loaded and which events fired
 
-## How it works
-
-The plugin listens to OpenCode plugin events:
+## Events handled
 
 - `session.idle`
 - `session.error`
 - `question.asked`
 - `permission.asked`
 
-It then sends notifications through:
+`question.asked` is the key event for the common "the agent paused and is waiting for my answer" flow.
 
-- `osascript` for macOS notifications
-- `terminal-notifier` as a secondary notification channel
-- `afplay` for sounds
+## Delivery channels
+
+- `osascript` for native macOS notifications
+- `terminal-notifier` as a fallback/secondary path
+- `afplay` for sound playback
 
 ## Requirements
 
@@ -39,43 +38,54 @@ Install `terminal-notifier`:
 brew install terminal-notifier
 ```
 
-## Install
-
-Create the plugin directory if needed:
+## Quick install
 
 ```bash
 mkdir -p ~/.config/opencode/plugins
-```
-
-Copy the plugin into place:
-
-```bash
 cp notify.js ~/.config/opencode/plugins/notify.js
 ```
 
 Then restart `opencode`.
 
-## Plugin file
+Or use the included installer:
 
-The plugin in this repo is:
+```bash
+./scripts/install.sh
+```
 
-- `notify.js`
+## Repository layout
+
+- `notify.js` - the production plugin
+- `scripts/install.sh` - convenience installer
+- `examples/opencode.json` - optional config example
+- `README.zh-CN.md` - Chinese guide
+
+## How the plugin works
+
+The plugin listens to OpenCode events and sends notifications with event-specific text and sounds:
+
+- `session.idle` -> `Task complete` + `Glass`
+- `question.asked` -> the first question text + `Ping`
+- `permission.asked` -> `OpenCode needs your approval` + `Ping`
+- `session.error` -> `Session error` + `Basso`
+
+It also writes logs to help diagnose issues.
 
 ## Debugging
 
-The plugin writes diagnostic logs here:
+Log file:
 
 ```bash
 /tmp/opencode-notify.log
 ```
 
-View the log with:
+Read it with:
 
 ```bash
 cat /tmp/opencode-notify.log
 ```
 
-Useful things to look for:
+Useful log lines:
 
 - `plugin loaded`
 - `event: question.asked`
@@ -83,9 +93,9 @@ Useful things to look for:
 - `osascript: ok`
 - `terminal-notifier: ok`
 
-## Verify your system notification setup
+## Verify your macOS notification setup
 
-Test notification delivery directly:
+Test each channel directly:
 
 ```bash
 osascript -e 'display notification "OpenCode test" with title "OpenCode" subtitle "macOS"'
@@ -93,22 +103,16 @@ terminal-notifier -title "OpenCode" -subtitle "Test" -message "terminal-notifier
 afplay /System/Library/Sounds/Glass.aiff
 ```
 
-If you still do not see notifications, check macOS notification permissions for the terminal app that launches `opencode`.
+If notifications still do not appear, check notification permissions for the terminal app that launches `opencode`.
 
-## Notes about question notifications
+## Screenshots / demo ideas
 
-OpenCode asking you to choose an option or answer a structured question is exposed as `question.asked`.
+This repo does not include screenshots yet, but a useful demo setup is:
 
-This is different from:
-
-- `permission.asked` for tool approval
-- ordinary assistant text replies that are not structured questions
-
-## Files
-
-- `notify.js` - production plugin
-- `examples/opencode.json` - optional config example
-- `scripts/install.sh` - convenience installer
+1. Start `opencode`
+2. Ask it to perform a task that will take a few steps
+3. Let it reach a `question.asked` pause
+4. Watch the notification arrive while the terminal is in the background
 
 ## License
 
