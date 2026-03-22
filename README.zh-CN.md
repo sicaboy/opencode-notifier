@@ -16,12 +16,6 @@
 
 # opencode-notifier
 
-给 OpenCode 增加 macOS 系统通知：任务完成、任务报错、以及中途停下来向你提问时提醒你。
-
-<p align="center">
-  <img src="./assets/preview.svg" alt="opencode-notifier preview" width="100%" />
-</p>
-
 ## 功能
 
 - OpenCode 回复完成后提醒
@@ -82,7 +76,6 @@ cp notify.js ~/.config/opencode/plugins/notify.js
 - `examples/opencode.json` - 示例配置
 - `README.md` - 英文说明
 - `assets/banner.svg` - 顶部横幅图
-- `assets/preview.svg` - 功能展示图
 
 ## 日志排错
 

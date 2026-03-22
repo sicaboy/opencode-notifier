@@ -2,48 +2,42 @@
   <defs>
     <linearGradient id="bg" x1="120" y1="40" x2="1120" y2="600" gradientUnits="userSpaceOnUse">
       <stop stop-color="#08111F"/>
-      <stop offset="0.5" stop-color="#102A43"/>
+      <stop offset="0.52" stop-color="#102A43"/>
       <stop offset="1" stop-color="#061018"/>
     </linearGradient>
-    <linearGradient id="accent" x1="260" y1="120" x2="1020" y2="500" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="220" y1="130" x2="1030" y2="480" gradientUnits="userSpaceOnUse">
       <stop stop-color="#7DD3FC"/>
       <stop offset="0.55" stop-color="#38BDF8"/>
       <stop offset="1" stop-color="#22C55E"/>
     </linearGradient>
-    <linearGradient id="soft" x1="180" y1="90" x2="998" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0EA5E9" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#22C55E" stop-opacity="0.08"/>
-    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 150) rotate(90) scale(170)">
+      <stop stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 520) rotate(90) scale(180)">
+      <stop stop-color="#22C55E" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
   <rect x="48" y="48" width="1184" height="544" rx="28" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
-  <circle cx="1038" cy="152" r="126" fill="url(#soft)"/>
-  <circle cx="248" cy="520" r="144" fill="url(#soft)"/>
-  <rect x="96" y="108" width="520" height="412" rx="28" fill="rgba(4,12,20,0.62)" stroke="rgba(125,211,252,0.18)"/>
-  <rect x="668" y="124" width="508" height="388" rx="28" fill="rgba(4,12,20,0.58)" stroke="rgba(255,255,255,0.08)"/>
-  <text x="128" y="178" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="28" font-weight="700">opencode-notifier</text>
-  <text x="128" y="242" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="60" font-weight="800">Stay in the flow.</text>
-  <text x="128" y="312" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="26" font-weight="500">
-    <tspan x="128" dy="0">macOS notifications for OpenCode when tasks finish,</tspan>
-    <tspan x="128" dy="38">error out, or pause and wait for your answer.</tspan>
-  </text>
-  <rect x="128" y="400" width="198" height="50" rx="25" fill="url(#accent)"/>
-  <text x="160" y="432" fill="#03131D" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="21" font-weight="800">Question asked</text>
-  <text x="128" y="496" fill="#8ECAE6" font-family="SF Mono, Menlo, monospace" font-size="18">session.idle  •  question.asked  •  session.error</text>
-  <text x="128" y="528" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="21">Uses osascript, terminal-notifier, and afplay.</text>
+  <circle cx="1060" cy="150" r="170" fill="url(#glowA)"/>
+  <circle cx="220" cy="520" r="180" fill="url(#glowB)"/>
 
-  <rect x="694" y="156" width="456" height="74" rx="18" fill="rgba(255,255,255,0.04)"/>
-  <text x="720" y="188" fill="#8ECAE6" font-family="SF Mono, Menlo, monospace" font-size="16">Notification Center</text>
-  <text x="720" y="216" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">OpenCode - opencode-notifier</text>
+  <rect x="114" y="116" width="1052" height="408" rx="32" fill="rgba(4,12,20,0.42)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="146" y="148" width="988" height="344" rx="26" fill="rgba(6,18,28,0.58)" stroke="rgba(125,211,252,0.18)"/>
 
-  <rect x="706" y="260" width="430" height="92" rx="16" fill="rgba(14,165,233,0.12)" stroke="rgba(125,211,252,0.2)"/>
-  <text x="730" y="290" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="18">Question asked</text>
-  <text x="730" y="320" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="22" font-weight="700">
-    <tspan x="730" dy="0">Which option should I use</tspan>
-    <tspan x="730" dy="28">for deployment?</tspan>
-  </text>
+  <text x="196" y="238" fill="#9FD7F5" font-family="SF Mono, Menlo, monospace" font-size="22">OpenCode plugin</text>
+  <text x="196" y="346" fill="white" font-family="SF Pro Display, Inter, Arial, sans-serif" font-size="104" font-weight="800">opencode-notifier</text>
 
-  <rect x="706" y="368" width="430" height="72" rx="16" fill="rgba(34,197,94,0.11)" stroke="rgba(34,197,94,0.24)"/>
-  <text x="730" y="398" fill="#D6E6F2" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="18">Session idle</text>
-  <text x="730" y="426" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">Task complete</text>
+  <rect x="196" y="392" width="404" height="18" rx="9" fill="url(#accent)" fill-opacity="0.92"/>
+
+  <rect x="860" y="186" width="214" height="56" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="913" y="221" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">macOS</text>
+
+  <rect x="860" y="262" width="214" height="56" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="910" y="297" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">OpenCode</text>
+
+  <rect x="860" y="338" width="214" height="56" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="905" y="373" fill="white" font-family="SF Pro Text, Inter, Arial, sans-serif" font-size="24" font-weight="700">Notify</text>
 </svg>

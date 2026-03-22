@@ -16,12 +16,6 @@
 
 # opencode-notifier
 
-macOS notifications for OpenCode when a task finishes, errors, or pauses to ask you a structured question.
-
-<p align="center">
-  <img src="./assets/preview.svg" alt="opencode-notifier preview" width="100%" />
-</p>
-
 ## Highlights
 
 - Notify when OpenCode becomes idle after finishing a response
@@ -80,7 +74,6 @@ Or use the included installer:
 - `examples/opencode.json` - optional config example
 - `README.zh-CN.md` - Chinese guide
 - `assets/banner.svg` - social-style banner graphic
-- `assets/preview.svg` - feature showcase graphic
 
 ## How the plugin works
 
